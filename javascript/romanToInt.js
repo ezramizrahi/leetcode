@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-const romanToInt = function(s) {
+var romanToInt = function(s) {
     let letters = {
         "I": 1,
         "V": 5,
