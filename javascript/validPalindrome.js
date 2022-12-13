@@ -8,7 +8,7 @@
  */
  var isPalindrome = function(s) {
     if ( s === ' ' ) return true;
-    let removedNonAlphaNumericChars = s.replace(/\W/g, '').toLowerCase();
+    let removedNonAlphaNumericChars = s.replace(/[^0-9a-z]/gi, '').toLowerCase();
     let reversed = removedNonAlphaNumericChars.split('').reverse().join('').toLowerCase();
     if ( removedNonAlphaNumericChars === reversed ) {
         return true;
