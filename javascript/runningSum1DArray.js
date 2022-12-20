@@ -21,3 +21,14 @@ var runningSumWithMap = function(nums) {
     let currentSum = 0;
     return nums.map((num) => currentSum += num);
 };
+
+// or
+
+var runningSumForEach = function(nums) {
+    let currentSum = 0;
+    return nums.forEach((n) => currentSum += n);
+};
+
+var runningSumReduce = function(nums) {
+    return nums.reduce((acc, curr) => acc + curr, 0);
+};

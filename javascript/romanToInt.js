@@ -15,7 +15,7 @@ var romanToInt = function(s) {
         "M": 1000
     };
     let result = 0;
-    for (i=0; i < s.length; i++){
+    for (i = 0; i < s.length; i++){
         const current = letters[s[i]];
         const next = letters[s[i+1]];
         if (current < next){
