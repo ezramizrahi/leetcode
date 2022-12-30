@@ -10,3 +10,8 @@ class Solution:
             if value > 1:
                 return True
         return False
+
+# or
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
+#         return len(nums) != len(set(nums))
